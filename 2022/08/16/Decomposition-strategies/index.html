@@ -4,11 +4,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="First Hexo post, 雨軒 JohnnyXuan">
-    <meta name="description" content="Hi there.This is our first Hexo generated post.
-Example of an image inside the post content:
+    <meta name="keywords" content="Decomposition strategies, 雨軒 JohnnyXuan">
+    <meta name="description" content="第二章 Decomposition strategies(自己看板本)
+分解策略
 
-">
+章節大綱
+深入了解軟體工程和其重要性
+利用decomposition patterns將系統細分出business capability進而取得各個服務的關">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +22,7 @@ Example of an image inside the post content:
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>First Hexo post | 雨軒 JohnnyXuan</title>
+    <title>Decomposition strategies | 雨軒 JohnnyXuan</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -444,12 +446,12 @@ Example of an image inside the post content:
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">First Hexo post</h1>
+                    <h1 class="description center-align post-title">Decomposition strategies</h1>
                 </div>
             </div>
         </div>
@@ -485,28 +487,28 @@ Example of an image inside the post content:
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-08-15
+                    2022-08-16
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-08-15
+                    2022-08-16
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    17
+                    2.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    10 Min
                 </div>
                 
 
@@ -526,9 +528,178 @@ Example of an image inside the post content:
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Hi there.<br>This is our first <strong>Hexo</strong> generated post.</p>
-<p>Example of an image inside the post content:</p>
-
+                <h1 id="第二章-Decomposition-strategies-自己看板本"><a href="#第二章-Decomposition-strategies-自己看板本" class="headerlink" title="第二章 Decomposition strategies(自己看板本)"></a>第二章 Decomposition strategies(自己看板本)</h1><blockquote>
+<p>分解策略</p>
+</blockquote>
+<h2 id="章節大綱"><a href="#章節大綱" class="headerlink" title="章節大綱"></a>章節大綱</h2><ul>
+<li>深入了解軟體工程和其重要性</li>
+<li>利用decomposition patterns將系統細分出business capability進而取得各個服務的關聯架構</li>
+<li>使用bounded context 和DDD(domain driven design)解析故事讓decomposition 更加簡單</li>
+</ul>
+<h2 id="微服務架構到底是什麼東西"><a href="#微服務架構到底是什麼東西" class="headerlink" title="微服務架構到底是什麼東西?"></a>微服務架構到底是什麼東西?</h2><ul>
+<li>功能性分解(functional decomposition)<ul>
+<li>過往的傳統架構喜歡將系統全部寫在一起(big ball of mud)</li>
+<li>功能性分解是一種不同於傳統架構設計風格，每個服務只鎖定處理某服務，將系統一一分離來避免麵條式代碼 (Spaghetti code)</li>
+<li>但是相對的這也會有許多挑戰和缺點</li>
+</ul>
+</li>
+<li>軟體工程非常非常重要<ul>
+<li>架構設計會很大的影響到系統品質(quality)</li>
+<li>scalability(可擴充性)，reliability(可靠性)，security，maintainability，testability，and deployability<ul>
+<li>scalability–如何設計系統讓系統在擴充功能或是應用範圍變大的時候變得簡單</li>
+<li>reliability–是指在給定時間內，特定環境下軟體無錯運行的概率。</li>
+<li>maintainability</li>
+<li>testability</li>
+<li>deployability</li>
+</ul>
+</li>
+<li>分解(decomposition)的兩種原因<ul>
+<li>讓多數人或是團體可以快速並附有成效的理解軟體的內容物。(loose couple)</li>
+<li>可清楚定義軟體中各個元素的關聯</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>The software architecture of a computing system is the set of structures needed to reason about the system, which comprise software elements, relations among them, and properties of both. Documenting Software Architectures — Bass et al.</p>
+</blockquote>
+<h3 id="THE-4-1-VIEW-MODEL-OF-SOFTWARE-ARCHITECTURE"><a href="#THE-4-1-VIEW-MODEL-OF-SOFTWARE-ARCHITECTURE" class="headerlink" title="THE 4+1 VIEW MODEL OF SOFTWARE ARCHITECTURE"></a>THE 4+1 VIEW MODEL OF SOFTWARE ARCHITECTURE</h3><ul>
+<li>相同於建築架構軟體也是需要一種設計樣式模型，Phillip Krutchen提出了4+1 view model詳細說明五種分析軟體架構的面相<br><img src="https://i.imgur.com/CQ4UdZR.png"></li>
+<li>logical view (邏輯觀點): 代表功能需求（系統應提供哪些服務給使用者）被拆解之後的結果。在一般軟體專案中若採用物件導向的方式開發，則Logic View以物件（object）或類別（class）和物件之間的關係（association、aggregation、usage、inheritance、instantiation）來呈現</li>
+<li>Implementation view (實體觀點):將軟體對應到硬體，關注可用性、可靠性、效能、可擴展性等非功能需求。</li>
+<li>Process view(行程觀點): 考慮效能或可用性這類的非功能需求，主要關注並行處理、分散式、資料與狀態完整性、容錯處理，以及如何將Logic View的靜態結構對應到Process View的動態視角。</li>
+<li>Deployment view(開發觀點):將系統分解成子系統，軟體被打包成可以被個人或開發團隊所實作的程式庫、類別庫或子系統。子系統被組成階層式架構，每一層都有清楚定義的介面與上層子系統溝通。</li>
+<li>Scenario View(腳本觀點):將其他四個觀點全部串連起來。</li>
+<li><a target="_blank" rel="noopener" href="https://teddy-chen-tw.blogspot.com/2017/01/4-1-view.html">https://teddy-chen-tw.blogspot.com/2017/01/4-1-view.html</a><h2 id="Overview-of-architectural-styles"><a href="#Overview-of-architectural-styles" class="headerlink" title="Overview of architectural styles"></a>Overview of architectural styles</h2><h3 id="THE-LAYERED-ARCHITECTURAL-STYLE"><a href="#THE-LAYERED-ARCHITECTURAL-STYLE" class="headerlink" title="THE LAYERED ARCHITECTURAL STYLE"></a>THE LAYERED ARCHITECTURAL STYLE</h3></li>
+<li>Presentation layer—接收外部請求( view、app、ap 等等 )，呼叫業務層，並將業務層回傳的 DTO(Data Transfer Object) 轉成 viewmodel 回傳給外部。<ul>
+<li>Contains code that implements the user interface or external APIs</li>
+</ul>
+</li>
+<li>Business logic layer—接收展示層請求，專注處理商業邏輯，呼叫資料層，並將資料層回傳的 model 轉換成 DTO 回傳給展示層。<ul>
+<li>Contains the business logic</li>
+</ul>
+</li>
+<li>Persistence layer—專注處理資料，資料來源來自資料庫或其他其他服務，接收業務層呼叫，執行資料處理回傳 model。<ul>
+<li>Implements the logic of interacting with the database</li>
+</ul>
+</li>
+<li>drawback<ul>
+<li>Single presentation layer—應用程式是有可能會需要調用超過一個單一系統資料的情況發生???????????????????????????</li>
+<li>Single persistence layer—應用程式是有可能會需要與多個資料庫作互動</li>
+<li>business logic 會強烈依賴於單一儲存層，造成你將無法將business logic和Database 分開測試。<ul>
+<li>Defines the business logic layer as depending on the persistence layer—In theory, this dependency prevents you from testing the business logic without the database.<h3 id="THE-HEXAGONAL-ARCHITECTURE-STYLE"><a href="#THE-HEXAGONAL-ARCHITECTURE-STYLE" class="headerlink" title="THE HEXAGONAL ARCHITECTURE STYLE"></a>THE HEXAGONAL ARCHITECTURE STYLE</h3><img src="https://i.imgur.com/wA47gSj.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>HEXAGONAL ARCHITECTURE是一種將商業邏輯放在中心的設計風格</li>
+<li>Duncan Nisbet 用六角形的桌子來比喻六角架構<ul>
+<li>所有的 domain objects 都在桌上。</li>
+<li>環繞桌子周圍的椅子就是 adapters。</li>
+<li>站在椅背後面的人等同於外部系統或服務。</li>
+<li>桌子的結構基本上不會變動（領域物件不變）；會變動的部分是跟外界銜接的 adapters。</li>
+<li>椅子的規格必須符合桌子的 port，才能卡進去－－adapters 必須符合 domain objects 的 port，彼此才能銜接得上。</li>
+</ul>
+</li>
+<li>內六角是領域邏輯，外六角是 adapters，作為內六角與外部系統銜接的橋樑。六角架構的一個重點是，domain model 並不依賴任何 layer（例如資料存取層），而是所有的 layers 都依賴 domain model。</li>
+<li><a target="_blank" rel="noopener" href="https://www.huanlintalk.com/2012/10/designing-layered-application-3-onion.html">https://www.huanlintalk.com/2012/10/designing-layered-application-3-onion.html</a></li>
+</ul>
+<h3 id="Pattern-Monolithic-architecture"><a href="#Pattern-Monolithic-architecture" class="headerlink" title="Pattern: Monolithic architecture"></a>Pattern: Monolithic architecture</h3><p><a target="_blank" rel="noopener" href="http://microservices.io/patterns/monolithic.html">http://microservices.io/patterns/monolithic.html</a><br><img src="https://i.imgur.com/BmV8Rk8.png"></p>
+<h3 id="Pattern-Microservice-architecture"><a href="#Pattern-Microservice-architecture" class="headerlink" title="Pattern: Microservice architecture"></a>Pattern: Microservice architecture</h3><p><a target="_blank" rel="noopener" href="http://microservices.io/patterns/microservices.html">http://microservices.io/patterns/microservices.html</a><br><img src="https://i.imgur.com/4jQIqgF.png"></p>
+<h2 id="Defining-an-application’s-microservice-architecture"><a href="#Defining-an-application’s-microservice-architecture" class="headerlink" title="Defining an application’s microservice architecture"></a>Defining an application’s microservice architecture</h2><p><img src="https://i.imgur.com/afihCGC.png"></p>
+<ul>
+<li>第一步驟:把故事化為運作流程</li>
+<li>第二步驟:分離並定義服務</li>
+<li>第三步驟:分析各個服務關聯性並設計service’s API<h2 id="Identifying-the-system-operations"><a href="#Identifying-the-system-operations" class="headerlink" title="Identifying the system operations"></a>Identifying the system operations</h2></li>
+<li>The First step:將故事描述成一個high-level domain model裡面包含key classes(Nouns)這些classes可以描述整個運作系統。</li>
+<li>The Second step: 將故事裡的動作(verbs)分析成domain model並加以描述動作後actors的關聯性<br><img src="https://i.imgur.com/2ZnNpvk.png"></li>
+<li>Create a high-level domain model<ul>
+<li> A domain model is created using standard techniques such as analyzing the nouns in the stories and scenarios and talking to the domain experts </li>
+<li>example :Place Order story<br><img src="https://i.imgur.com/XRqAZl6.png"></li>
+<li>Nouns: Consumer,order,restaurant,and CreditCard</li>
+<li>Accept Order story<br><img src="https://i.imgur.com/QmP2RWF.png"></li>
+<li>Courier and Delivery classes,最後補足 MenuItem and Address<br><img src="https://i.imgur.com/jNIoBiL.png"></li>
+</ul>
+</li>
+<li>Defined System Operations<ul>
+<li>A good starting point for identifying system commands is to analyze the verbs in the user stories and scenarios.<br><img src="https://i.imgur.com/5BArGHi.png"><br><img src="https://i.imgur.com/GDNCzji.png"></li>
+<li>Defined commands operations<br><img src="https://i.imgur.com/AYi3b5O.png"><br><img src="https://i.imgur.com/SVmWVzQ.png"></li>
+</ul>
+</li>
+<li>Query command 省略<h2 id="Defining-services-by-applying-the-Decompose-by-business-capability-pattern"><a href="#Defining-services-by-applying-the-Decompose-by-business-capability-pattern" class="headerlink" title="Defining services by applying the Decompose by business capability pattern"></a>Defining services by applying the Decompose by business capability pattern</h2><a target="_blank" rel="noopener" href="http://microservices.io/patterns/decomposition/decompose-by-business-capability.html">http://microservices.io/patterns/decomposition/decompose-by-business-capability.html</a></li>
+<li>An organization’s business capabilities capture what an organization’s business is</li>
+<li>定義 business capabilities ???<ul>
+<li>example:<ul>
+<li>online store business capabilities<ul>
+<li>Order management</li>
+<li>inventory management</li>
+<li>shipping…and so on</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>作者對 FTGO 的 business capabilities<ul>
+<li>Supplier management<ul>
+<li>Courier management—Managing courier information</li>
+<li>Restaurant information management—Managing restaurant menus and other information, including location and open hours</li>
+</ul>
+</li>
+<li>Consumer management—Managing information about consumers</li>
+<li>Order taking and fulfillment<ul>
+<li>Order management—Enabling consumers to create and manage orders</li>
+<li>Restaurant order management—Managing the preparation of orders at a restaurant</li>
+<li> Logistics</li>
+<li> Courier availability management—Managing the real-time availability of couriers to delivery orders</li>
+<li> Delivery management—Delivering orders to consumers</li>
+</ul>
+</li>
+<li>Accounting<ul>
+<li>Consumer accounting—Managing billing of consumers</li>
+<li>Restaurant accounting—Managing payments to restaurants</li>
+<li>Courier accounting—Managing payments to couriers</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>寫出所有的business capilities後將其化為服務<br><img src="https://i.imgur.com/ojuz4eA.png"><h2 id="Defining-service-by-applying-the-Decompose-by-sub-domain-pattern"><a href="#Defining-service-by-applying-the-Decompose-by-sub-domain-pattern" class="headerlink" title="Defining service by applying the Decompose by sub-domain pattern"></a>Defining service by applying the Decompose by sub-domain pattern</h2></li>
+<li>bounded context的想法就是不要把一整個大系統視為一個context，而是依據「某種方式」把整個大系統分成若干個bounded context（有界限的context）。</li>
+<li>設立bounded context並沒有一定的標準，純看當下的需求，通常會從語意(Linguistic)與業務能力(Business Capability)下手</li>
+<li><a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10218252">https://ithelp.ithome.com.tw/articles/10218252</a></li>
+<li><a target="_blank" rel="noopener" href="https://teddy-chen-tw.blogspot.com/2016/11/4bounded-context.html">https://teddy-chen-tw.blogspot.com/2016/11/4bounded-context.html</a></li>
+<li><a target="_blank" rel="noopener" href="https://medium.com/%E7%A7%91%E6%8A%80%E6%96%B0%E6%83%B3/domain-driven-design-%E7%AC%AC%E4%BA%8C%E6%AD%A5-bounded-contexts-%E5%92%8C%E5%85%B6%E6%87%89%E7%94%A8-75c5780dab49">https://medium.com/%E7%A7%91%E6%8A%80%E6%96%B0%E6%83%B3/domain-driven-design-%E7%AC%AC%E4%BA%8C%E6%AD%A5-bounded-contexts-%E5%92%8C%E5%85%B6%E6%87%89%E7%94%A8-75c5780dab49</a><br><img src="https://i.imgur.com/65XDS6X.png"><h2 id="Decomposition-guidelines"><a href="#Decomposition-guidelines" class="headerlink" title="Decomposition guidelines"></a>Decomposition guidelines</h2><h3 id="SINGLE-RESPONSIBILITY-PRINCIPLE-SRP"><a href="#SINGLE-RESPONSIBILITY-PRINCIPLE-SRP" class="headerlink" title="SINGLE RESPONSIBILITY PRINCIPLE(SRP)"></a>SINGLE RESPONSIBILITY PRINCIPLE(SRP)</h3><blockquote>
+<p>A class should have only one reason to change.  —Robert C. Martin</p>
+</blockquote>
+</li>
+<li>一個模組應只對唯一一個腳色(actor)或利益相關者負責。</li>
+<li><a target="_blank" rel="noopener" href="https://medium.com/%E7%A8%8B%E5%BC%8F%E6%84%9B%E5%A5%BD%E8%80%85/%E4%BD%BF%E4%BA%BA%E7%98%8B%E7%8B%82%E7%9A%84-solid-%E5%8E%9F%E5%89%87-%E5%96%AE%E4%B8%80%E8%81%B7%E8%B2%AC%E5%8E%9F%E5%89%87-single-responsibility-principle-c2c4bd9b4e79">https://medium.com/%E7%A8%8B%E5%BC%8F%E6%84%9B%E5%A5%BD%E8%80%85/%E4%BD%BF%E4%BA%BA%E7%98%8B%E7%8B%82%E7%9A%84-solid-%E5%8E%9F%E5%89%87-%E5%96%AE%E4%B8%80%E8%81%B7%E8%B2%AC%E5%8E%9F%E5%89%87-single-responsibility-principle-c2c4bd9b4e79</a></li>
+<li><a target="_blank" rel="noopener" href="https://medium.com/@f40507777/%E5%96%AE%E4%B8%80%E8%81%B7%E8%B2%AC%E5%8E%9F%E5%89%87-single-responsibility-principle-7b4eb03f1fff">https://medium.com/@f40507777/%E5%96%AE%E4%B8%80%E8%81%B7%E8%B2%AC%E5%8E%9F%E5%89%87-single-responsibility-principle-7b4eb03f1fff</a><h3 id="COMMON-CLOSURE-PRINCIPLE-CCP"><a href="#COMMON-CLOSURE-PRINCIPLE-CCP" class="headerlink" title="COMMON CLOSURE PRINCIPLE(CCP)"></a>COMMON CLOSURE PRINCIPLE(CCP)</h3><blockquote>
+<p>The classes in a package should be closed together against the same kinds of changes. A change that affects a package affects all the classes in that package.<br>—Robert C. Martin</p>
+</blockquote>
+</li>
+<li>將會在相同時間 因為相同理由而發生變化的類別放在一起，最小化code複雜度<h2 id="Obstacles-to-decomposing-an-application-into-services"><a href="#Obstacles-to-decomposing-an-application-into-services" class="headerlink" title="Obstacles to decomposing an application into services"></a>Obstacles to decomposing an application into services</h2><h3 id="Network-latency"><a href="#Network-latency" class="headerlink" title="Network latency"></a>Network latency</h3></li>
+<li>分散式系統永遠的痛</li>
+<li>分離後的多個服務系統將會產生大量的溝通過程(process)造成延遲<h3 id="Reduced-availability-due-to-synchronous-communication"><a href="#Reduced-availability-due-to-synchronous-communication" class="headerlink" title="Reduced availability due to synchronous communication"></a>Reduced availability due to synchronous communication</h3></li>
+<li>如何實現服務和服務之間的溝通又不會降低可用性</li>
+<li>Example–想實現createorder()最直接的方法就是order service利用REST同步調用其他服務，然而使用REST會降低order service的可用性若是其他服務不能使用了Order Service 將無法再產生任何order</li>
+<li><a target="_blank" rel="noopener" href="https://medium.com/@jinghua.shih/%E7%AD%86%E8%A8%98-rest-%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E9%BA%BC-170ad2b45836">https://medium.com/@jinghua.shih/%E7%AD%86%E8%A8%98-rest-%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E9%BA%BC-170ad2b45836</a>(REST 介紹)<h3 id="Maintaining-data-consistency-across-services"><a href="#Maintaining-data-consistency-across-services" class="headerlink" title="Maintaining data consistency across services"></a>Maintaining data consistency across services</h3></li>
+<li>維持多個服務的資料一致性將會是巨大的考驗</li>
+<li>傳統作法 two-phase,commit-based,distributed transaction management mechanism</li>
+<li>CH4會介紹為什麼上述的方法並不是合適用在現今的應用程式中<h3 id="Obtaining-a-consistent-view-of-the-data"><a href="#Obtaining-a-consistent-view-of-the-data" class="headerlink" title="Obtaining a consistent view of the data"></a>Obtaining a consistent view of the data</h3></li>
+<li>如何將多種資料庫的資料同時展示在同一個服務當中，就算解決資料庫一致性的問題但還是會出現這樣的問題。<h3 id="God-Classes-preventing-decomposition"><a href="#God-Classes-preventing-decomposition" class="headerlink" title="God Classes preventing decomposition"></a>God Classes preventing decomposition</h3></li>
+<li>God Class 當一個物件在系統當中控制太多其他物件，變成了可以做任何事情的class(class that does everything)</li>
+<li>Example - FTGO 的Order class<br><img src="https://i.imgur.com/btGrkqM.png"><h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2></li>
+<li>應用程式結構(建築)決定了maintainability,testability,and deployability</li>
+<li>微服務架構是一種達成高度maintainability,testability,and deployability的設計風格</li>
+<li>Service在微服務中是以business concerns包含business capabilities and subdomain而非technical concerns</li>
+<li>兩種decomposition pattern<ul>
+<li>以business capability作為分解核心</li>
+<li>以subdomain利用DDD(domain driven design)的概念進行分解</li>
+</ul>
+</li>
+</ul>
 
                 
             </div>
@@ -555,7 +726,7 @@ Example of an image inside the post content:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://johnnyxuan6677.github.io/2022/08/15/First-Hexo-post/">https://johnnyxuan6677.github.io/2022/08/15/First-Hexo-post/</a>
+                    <a href="https://johnnyxuan6677.github.io/2022/08/16/Decomposition-strategies/">https://johnnyxuan6677.github.io/2022/08/16/Decomposition-strategies/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -642,13 +813,13 @@ Example of an image inside the post content:
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/08/16/%E8%80%83%E8%A9%A6%E7%AD%86%E8%A8%98/">
+                <a href="/2022/08/16/rasberry-pi-%E9%81%A0%E7%AB%AF%E9%80%A3%E7%B5%90/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="考試筆記">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="rasberry pi 遠端連結">
                         
-                        <span class="card-title">考試筆記</span>
+                        <span class="card-title">rasberry pi 遠端連結</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -679,13 +850,13 @@ Example of an image inside the post content:
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/08/13/hello-world/">
+                <a href="/2022/08/16/%E7%A0%94%E7%A9%B6%E7%9B%B8%E9%97%9C!/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="研究相關@ㄉ">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">研究相關@ㄉ</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -696,7 +867,7 @@ Example of an image inside the post content:
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-13
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-16
                             </span>
                         <span class="publish-author">
                             

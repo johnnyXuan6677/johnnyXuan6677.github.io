@@ -45,8 +45,6 @@
 
 
     
-        <link rel="stylesheet" type="text/css" href="/css/reward.css">
-    
 
 
 
@@ -322,9 +320,9 @@
               
                 <li>
 
-                  <a href="/music " style="margin-left:75px">
+                  <a href="/music " style="margin-left:50px">
 				  
-				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
+				   <i class="fa fas fa-music" style="position: absolute;left:28px" ></i>
 			      
 		          <span>Music</span>
                   </a>
@@ -332,9 +330,9 @@
               
                 <li>
 
-                  <a href="/movies " style="margin-left:75px">
+                  <a href="/movies " style="margin-left:50px">
 				  
-				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
+				   <i class="fa fas fa-film" style="position: absolute;left:28px" ></i>
 			      
 		          <span>Movies</span>
                   </a>
@@ -342,9 +340,9 @@
               
                 <li>
 
-                  <a href="/books " style="margin-left:75px">
+                  <a href="/books " style="margin-left:50px">
 				  
-				   <i class="fa fas fa-book" style="position: absolute;left:50px" ></i>
+				   <i class="fa fas fa-book" style="position: absolute;left:28px" ></i>
 			      
 		          <span>Books</span>
                   </a>
@@ -352,9 +350,9 @@
               
                 <li>
 
-                  <a href="/galleries " style="margin-left:75px">
+                  <a href="/galleries " style="margin-left:50px">
 				  
-				   <i class="fa fas fa-image" style="position: absolute;left:50px" ></i>
+				   <i class="fa fas fa-image" style="position: absolute;left:28px" ></i>
 			      
 		          <span>Galleries</span>
                   </a>
@@ -367,7 +365,7 @@
         
         <li><div class="divider"></div></li>
         <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+            <a href="https://github.com/johnnyXuan6677" class="waves-effect waves-light" target="_blank">
                 <i class="fab fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
@@ -424,7 +422,7 @@
     }
 </style>
 
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+<a href="https://github.com/johnnyXuan6677" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
    data-tooltip="Fork Me" data-position="left" data-delay="50">
     <svg viewBox="0 0 250 250" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -545,6 +543,9 @@
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">18.6k</span>
             
             
             
@@ -749,17 +750,30 @@ $(function () {
     
 
     
+        
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/sakura.js"><\/script>');
+            }
+        </script>
+    
 
     <!-- 雪花特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/snow.js"><\/script>');
+            }
+        </script>
     
 
     <!-- 鼠标星星特效 -->
     
 
-     
-        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
-        <script src="/libs/others/TencentCaptcha.js"></script>
-        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
     
 
     <!-- Baidu Analytics -->
@@ -780,8 +794,6 @@ $(function () {
     })();
 </script>
 
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
     
     
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>

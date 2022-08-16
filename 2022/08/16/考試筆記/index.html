@@ -1,0 +1,1556 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="考試筆記, 雨軒 JohnnyXuan">
+    <meta name="description" content="中鋼考試筆記java 基礎教學自己先刷題https://www.w3schools.com/java/
+108年考古C語言 指標(pointer)
+https://kopu.chat/2017/05/15/c%E8%AA%9E%E8%A8%">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>考試筆記 | 雨軒 JohnnyXuan</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+
+
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/css/my.css">
+<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/css/post.css">
+
+
+
+
+    
+
+
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.2">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">雨軒 JohnnyXuan</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Index</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>Contact</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-list" style="zoom: 0.6;"></i>
+      
+      <span>Medias</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/music">
+          
+          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Music</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/movies">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Movies</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/books">
+          
+          <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Books</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/galleries">
+          
+          <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Galleries</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">雨軒 JohnnyXuan</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Index
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			Contact
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-list"></i>
+			
+			Medias
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/music " style="margin-left:50px">
+				  
+				   <i class="fa fas fa-music" style="position: absolute;left:28px" ></i>
+			      
+		          <span>Music</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/movies " style="margin-left:50px">
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:28px" ></i>
+			      
+		          <span>Movies</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/books " style="margin-left:50px">
+				  
+				   <i class="fa fas fa-book" style="position: absolute;left:28px" ></i>
+			      
+		          <span>Books</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/galleries " style="margin-left:50px">
+				  
+				   <i class="fa fas fa-image" style="position: absolute;left:28px" ></i>
+			      
+		          <span>Galleries</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/johnnyXuan6677" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/johnnyXuan6677" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">考試筆記</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-08-16
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-08-16
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    7.3k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    29 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="中鋼考試筆記"><a href="#中鋼考試筆記" class="headerlink" title="中鋼考試筆記"></a>中鋼考試筆記</h1><p>java 基礎教學自己先刷題<br><a target="_blank" rel="noopener" href="https://www.w3schools.com/java/">https://www.w3schools.com/java/</a></p>
+<h2 id="108年考古"><a href="#108年考古" class="headerlink" title="108年考古"></a>108年考古</h2><h3 id="C語言-指標-pointer"><a href="#C語言-指標-pointer" class="headerlink" title="C語言 指標(pointer)"></a>C語言 指標(pointer)</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://kopu.chat/2017/05/15/c%E8%AA%9E%E8%A8%80-%E8%B6%85%E5%A5%BD%E6%87%82%E7%9A%84%E6%8C%87%E6%A8%99%EF%BC%8C%E5%88%9D%E5%AD%B8%E8%80%85%E8%AB%8B%E9%80%B2%EF%BD%9E/">https://kopu.chat/2017/05/15/c%E8%AA%9E%E8%A8%80-%E8%B6%85%E5%A5%BD%E6%87%82%E7%9A%84%E6%8C%87%E6%A8%99%EF%BC%8C%E5%88%9D%E5%AD%B8%E8%80%85%E8%AB%8B%E9%80%B2%EF%BD%9E/</a></li>
+<li>void main VS int main<ul>
+<li><a target="_blank" rel="noopener" href="https://kknews.cc/zh-tw/code/4vq32m2.html">https://kknews.cc/zh-tw/code/4vq32m2.html</a><h3 id="java-exception"><a href="#java-exception" class="headerlink" title="java exception"></a>java exception</h3></li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://litotom.com/java-exception-handling-try-catch/">https://litotom.com/java-exception-handling-try-catch/</a><h3 id="java-readline"><a href="#java-readline" class="headerlink" title="java readline()"></a>java readline()</h3></li>
+<li><strong><a target="_blank" rel="noopener" href="http://tw.gitbook.net/java/io/bufferedreader_readline.html">http://tw.gitbook.net/java/io/bufferedreader_readline.html</a></strong><h3 id="i-VS-i"><a href="#i-VS-i" class="headerlink" title="i++ VS ++i"></a>i++ VS ++i</h3></li>
+<li><a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10192800">https://ithelp.ithome.com.tw/articles/10192800</a><h3 id="Metadata-說明"><a href="#Metadata-說明" class="headerlink" title="Metadata 說明"></a>Metadata 說明</h3></li>
+<li><a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10237545">https://ithelp.ithome.com.tw/articles/10237545</a><h3 id="資料庫類別"><a href="#資料庫類別" class="headerlink" title="資料庫類別"></a>資料庫類別</h3></li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Microsoft_Access">https://zh.wikipedia.org/wiki/Microsoft_Access</a></li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E5%BA%93#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%88%86%E7%B1%BB">https://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E5%BA%93#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%88%86%E7%B1%BB</a></li>
+<li><a target="_blank" rel="noopener" href="https://wiki.mbalib.com/zh-tw/%E7%BD%91%E7%8A%B6%E6%95%B0%E6%8D%AE%E5%BA%93">https://wiki.mbalib.com/zh-tw/%E7%BD%91%E7%8A%B6%E6%95%B0%E6%8D%AE%E5%BA%93</a></li>
+</ul>
+<h3 id="關聯式資料庫-兩表格連結-foreign-key"><a href="#關聯式資料庫-兩表格連結-foreign-key" class="headerlink" title="關聯式資料庫 兩表格連結 foreign key"></a>關聯式資料庫 兩表格連結 foreign key</h3><ul>
+<li><a target="_blank" rel="noopener" href="http://cc.cust.edu.tw/~ccchen/doc/db_02.pdf">http://cc.cust.edu.tw/~ccchen/doc/db_02.pdf</a></li>
+</ul>
+<h3 id="設備不需要靜態地址"><a href="#設備不需要靜態地址" class="headerlink" title="設備不需要靜態地址"></a>設備不需要靜態地址</h3><ul>
+<li><p>DHCP 伺服器是什麼</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.stockfeel.com.tw/dhcp%E4%BC%BA%E6%9C%8D%E5%99%A8%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F%E5%A6%82%E4%BD%95%E9%81%8B%E7%94%A8%EF%BC%9F/">https://www.stockfeel.com.tw/dhcp%E4%BC%BA%E6%9C%8D%E5%99%A8%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F%E5%A6%82%E4%BD%95%E9%81%8B%E7%94%A8%EF%BC%9F/</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.pcnet.idv.tw/pcnet/network/network_ip_dhcp.htm">http://www.pcnet.idv.tw/pcnet/network/network_ip_dhcp.htm</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.xuite.net/dian.hk1211/ddt/4645536-DHCP">https://blog.xuite.net/dian.hk1211/ddt/4645536-DHCP</a></li>
+</ul>
+</li>
+<li><p>WINS 伺服器</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://kknews.cc/zh-tw/tech/v32xzxl.html">https://kknews.cc/zh-tw/tech/v32xzxl.html</a></li>
+</ul>
+</li>
+<li><p>DNS伺服器</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://aws.amazon.com/tw/route53/what-is-dns/">https://aws.amazon.com/tw/route53/what-is-dns/</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.xuite.net/arcloveangel/lovestore/18509803-%E3%80%90%E7%B6%B2%E8%B7%AF%E5%9F%BA%E7%A4%8E%E7%9F%A5%E8%AD%98%E3%80%91%E4%BB%80%E9%BA%BC%E6%98%AFDNS(Domain+Name+System)Server%EF%BC%9F">https://blog.xuite.net/arcloveangel/lovestore/18509803-%E3%80%90%E7%B6%B2%E8%B7%AF%E5%9F%BA%E7%A4%8E%E7%9F%A5%E8%AD%98%E3%80%91%E4%BB%80%E9%BA%BC%E6%98%AFDNS(Domain+Name+System)Server%EF%BC%9F</a><h3 id="1補述-2-補數"><a href="#1補述-2-補數" class="headerlink" title="1補述 2 補數"></a>1補述 2 補數</h3></li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://noob.tw/complements/">https://noob.tw/complements/</a></p>
+<h3 id="IPV4-amp-IPV6"><a href="#IPV4-amp-IPV6" class="headerlink" title="IPV4 &amp; IPV6"></a>IPV4 &amp; IPV6</h3></li>
+<li><p><a target="_blank" rel="noopener" href="https://www.ithome.com.tw/tech/92046">https://www.ithome.com.tw/tech/92046</a></p>
+<ul>
+<li>IPv4的IP位址是由32位元所組成「10110110.11101001.01001100.11111111」。</li>
+<li>而IPv6的IP位址則是128位元組成「1079:0BD3:6ED4:1D71:414B:2E2A:7144:72BE」</li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://medium.com/upas/%E8%BF%8E%E5%90%91ipv6%E6%99%82%E4%BB%A3-%E4%B8%80-%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86%E4%B8%8D%E5%8F%AF%E4%B8%8D%E7%9F%A5%E7%9A%84ipv4-ipv6%E5%B7%AE%E7%95%B0%E7%B8%BD%E6%95%B4%E7%90%86-63c1e8559bfa">https://medium.com/upas/%E8%BF%8E%E5%90%91ipv6%E6%99%82%E4%BB%A3-%E4%B8%80-%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86%E4%B8%8D%E5%8F%AF%E4%B8%8D%E7%9F%A5%E7%9A%84ipv4-ipv6%E5%B7%AE%E7%95%B0%E7%B8%BD%E6%95%B4%E7%90%86-63c1e8559bfa</a></p>
+<h3 id="wifi-採用哪種協定來取得存取全"><a href="#wifi-採用哪種協定來取得存取全" class="headerlink" title="wifi 採用哪種協定來取得存取全"></a>wifi 採用哪種協定來取得存取全</h3></li>
+<li><p>Aloha protocol</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/ALOHAnet">https://zh.wikipedia.org/wiki/ALOHAnet</a></li>
+</ul>
+</li>
+<li><p>TDMA(分時多工)</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%97%B6%E5%88%86%E5%A4%9A%E5%9D%80">https://zh.wikipedia.org/wiki/%E6%97%B6%E5%88%86%E5%A4%9A%E5%9D%80</a></li>
+</ul>
+</li>
+<li><p>CSMA/CD VS CSMA/CA</p>
+<ul>
+<li><p>一般來說乙太網路 (Ethernet) 的標準 IEEE 802.3 使用的就是 CSMA/CD (Carrier Sense Multiple Access with Collision Detection) ，然而無線乙太網路 (Wireless Ethernet) 的標準 IEEE 802.11 使用的為 CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance)。從字面上來看差異在 CD 與 CA 不同，一個是碰撞偵測處理 Collision Detection，另一個則是避免碰撞 Collision Avoidance，由於不同訊號傳遞媒體的物理限制，進而使用了不同的方式來實作網路封包傳遞的功能。CSMA/CA 並不是只能用在無線網路，在低成本的 LocalTalk 也是使用 CSMA/CA 進行封包傳送。以下大致說明一下兩種標準的運作要點。</p>
+</li>
+<li><p>CSMA/CD（載波偵測多重存取/碰撞偵測）運作過程如下：</p>
+<ul>
+<li>訊號採用廣播的方式傳送（所以才會發生碰撞）</li>
+<li>當節點要發送訊號時，會先偵測通道是否有其他節點正在使用（carrier sense）</li>
+<li>當通道沒有被其他節點使用時，就傳送封包</li>
+<li>封包傳送之後立即檢查是否發生碰撞（carrier detection），若是發生碰撞則對通道發出高頻訊號高知其他節點已經發生碰撞</li>
+<li>碰撞後隨機等待一段時間重新發送封包</li>
+<li>嘗試 15 次都失敗的話則告知上層 Timeout</li>
+</ul>
+</li>
+<li><p>CSMA/CA（載波偵測多重存取/碰撞避免）運作過程如下：</p>
+<ul>
+<li>訊號採用廣播的方式傳送（非常容易受到無線電波干擾）</li>
+<li>當節點要發送訊號時偵測頻道是否空閒</li>
+<li>若是空閒則等待 IFS, Interval Frame Space 時間後再次偵測頻道是否空閒</li>
+<li>若是空閒則發送封包，反之重新進入等待頻道空閒（隨機等待時間）</li>
+<li>發送 RTS 之後必須在限定時間內收到來至目的端的 CTS 訊號</li>
+<li>當失敗 32 次之後通知上層 Timeout</li>
+</ul>
+</li>
+<li><p>此外 CSMA/CA 又可分為以下兩種類型</p>
+<ul>
+<li>分散式協調功能 (Distributed Coordination Function, DCF)：競爭式服務 (Contention Service)</li>
+<li>集中式協調功能 (Point Coordination Function, PCF)：無競爭式服務 (Contention-Free Service)</li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://blog.toright.com/posts/1243/csmacd-%E8%88%87-csmaca-%E4%B9%8B%E9%96%93%E7%9A%84%E5%B7%AE%E7%95%B0.html">https://blog.toright.com/posts/1243/csmacd-%E8%88%87-csmaca-%E4%B9%8B%E9%96%93%E7%9A%84%E5%B7%AE%E7%95%B0.html</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="哪個編碼-Modulation-技術可以傳送最多資料"><a href="#哪個編碼-Modulation-技術可以傳送最多資料" class="headerlink" title="哪個編碼(Modulation)技術可以傳送最多資料"></a>哪個編碼(Modulation)技術可以傳送最多資料</h3><p><a target="_blank" rel="noopener" href="http://wshnt.kuas.edu.tw/network/s2/index6.htm">http://wshnt.kuas.edu.tw/network/s2/index6.htm</a><br><a target="_blank" rel="noopener" href="https://www.csie.ntu.edu.tw/~hsinmu/courses/_media/wn_14spring/modulation.pdf">https://www.csie.ntu.edu.tw/~hsinmu/courses/_media/wn_14spring/modulation.pdf</a></p>
+<ul>
+<li><p>16QAM</p>
+</li>
+<li><p>BPSK</p>
+</li>
+<li><p>QPSK</p>
+</li>
+<li><p>FSK</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%AD%A3%E4%BA%A4%E5%B9%85%E5%BA%A6%E8%B0%83%E5%88%B6">https://zh.wikipedia.org/wiki/%E6%AD%A3%E4%BA%A4%E5%B9%85%E5%BA%A6%E8%B0%83%E5%88%B6</a></p>
+<h3 id="暫存器-opcode"><a href="#暫存器-opcode" class="headerlink" title="暫存器 opcode"></a>暫存器 opcode</h3></li>
+<li><p>file:///C:/Users/user/Downloads/notes-cmp05.pdf</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://yamol.tw/item_essay-10.+%E5%81%87%E8%A8%AD%E6%9F%90%E5%80%8B%E9%9B%BB%E8%85%A6%E7%9A%84+CPU+%E8%A3%A1%E6%9C%89+16+%E5%80%8B%E8%B3%87%E6%96%99%E6%9A%AB%E5%AD%98%E5%99%A8%28register%29%EF%BC%8C%E8%A8%98..-276984.htm">https://yamol.tw/item_essay-10.+%E5%81%87%E8%A8%AD%E6%9F%90%E5%80%8B%E9%9B%BB%E8%85%A6%E7%9A%84+CPU+%E8%A3%A1%E6%9C%89+16+%E5%80%8B%E8%B3%87%E6%96%99%E6%9A%AB%E5%AD%98%E5%99%A8%28register%29%EF%BC%8C%E8%A8%98..-276984.htm</a></p>
+<h3 id="摩爾定律"><a href="#摩爾定律" class="headerlink" title="摩爾定律"></a>摩爾定律</h3></li>
+<li><p>預計18個月會將晶片的效能提高一倍（即更多的電晶體使其更快），是一種以倍數增長的觀測。</p>
+</li>
+<li><p>積體電路上可容納的電晶體數目，約每隔兩年便會增加一倍；經常被參照的「18個月」</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%91%A9%E5%B0%94%E5%AE%9A%E5%BE%8B">https://zh.wikipedia.org/wiki/%E6%91%A9%E5%B0%94%E5%AE%9A%E5%BE%8B</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.bnext.com.tw/article/56678/semiconductor-moris-chang-moore's-law-limited-">https://www.bnext.com.tw/article/56678/semiconductor-moris-chang-moore's-law-limited-</a></p>
+<h3 id="RISC-CISC-AISC"><a href="#RISC-CISC-AISC" class="headerlink" title="RISC CISC AISC"></a>RISC CISC AISC</h3><p><a target="_blank" rel="noopener" href="https://www.techbang.com/posts/10678-fully-understand-arm-processors-cisc-and-risc-are-what-history-structure-a-see-through-the-computer-96-issues-cover-story-the-king">https://www.techbang.com/posts/10678-fully-understand-arm-processors-cisc-and-risc-are-what-history-structure-a-see-through-the-computer-96-issues-cover-story-the-king</a></p>
+</li>
+<li><p>處理器的指令集可簡單分為2種，CISC（complex instruction set computer）以及RISC（reduced instruction set computer）。一開始的處理器都是CISC架構，隨著時間演進，有越來越多的指令集加入。由於當時編譯器的技術並不純熟，程式都會直接以機器碼或是組合語言寫成，為了減少程式設計師的設計時間，逐漸開發出單一指令，複雜操作的程式碼，設計師只需寫下簡單的指令，再交由CPU去執行。但是後來有人發現，整個指令集中，只有約20％的指令常常會被使用到，約佔整個程式的80％；剩餘80％的指令，只佔整個程式的20％。於是1979年美國加州大學柏克萊分校的David Patterson教授提出了RISC的想法，主張硬體應該專心加速常用的指令，較為複雜的指令則利用常用的指令去組合。</p>
+<ul>
+<li>RISC的優點列舉如下：<ul>
+<li>指令長度固定，方便CPU解碼，簡化解碼器設計。</li>
+<li>盡量在CPU的暫存器（最快的記憶體元件）裡操作，避免額外的讀取與載入時間。</li>
+<li>由於指令長度固定，更能受益於執行線路管線化（pipeline）後所帶來的效能提升。</li>
+<li>處理器簡化，電晶體數量少，易於提升運作時脈。比起同時脈的CISC處理器，耗電量較低。</li>
+</ul>
+</li>
+<li>RISC的缺點列舉如下：<ul>
+<li>複雜指令需要由許多的小指令去完成，程式變得比較大，記憶體也占用比較多，這在硬碟昂貴，常常使用磁帶儲存的時代來說，是個大缺點。</li>
+<li>程式變長，代表著讀取工作變得繁重，需要更多的時間將指令從記憶體載入至處理器內。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%8C%87%E4%BB%A4%E9%9B%86%E6%9E%B6%E6%A7%8B">https://zh.wikipedia.org/wiki/%E6%8C%87%E4%BB%A4%E9%9B%86%E6%9E%B6%E6%A7%8B</a></p>
+<ul>
+<li>複雜指令集運算（Complex Instruction Set Computing，CISC）<ul>
+<li>目前x86架構微處理器如Intel的Pentium/Celeron/Xeon與AMD的Athlon/Duron/Sempron；以及其64位元擴充系統的x86-64架構的Intel 64的Intel Core/Core 2/Celeron/Pentium/Xeon與AMD64的Phenom II/Phenom/Athlon 64/Athlon II/Opteron/AMD APU/Ryzen/EPYC都屬於複雜指令集。主要針對的作業系統是微軟的Windows和蘋果公司的macOS。另外Linux，一些UNIX等，都可以執行在x86（複雜指令集）架構的微處理器。</li>
+</ul>
+</li>
+<li>精簡指令集運算（Reduced Instruction Set Computing，RISC）<ul>
+<li>這種指令集運算包括惠普的PA-RISC，國際商業機器的PowerPC，康柏（後被惠普收購）的Alpha，美普思科技公司的MIPS，SUN公司的SPARC，ARM公司的ARM架構等。目前有UNIX、Linux以及包括iOS、Android、Windows Phone等在內的大多數行動作業系統執行在精簡指令集的處理器上。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>一般性動裝置的作業系統或事物聯網的作業系統皆為RISC</p>
+</li>
+<li><p>個人型電腦大型伺服器超級電腦皆為CISC</p>
+<h3 id="ROM-可以從電腦直接給寫"><a href="#ROM-可以從電腦直接給寫" class="headerlink" title="ROM 可以從電腦直接給寫"></a>ROM 可以從電腦直接給寫</h3></li>
+<li><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/woshizzai/article/details/80109617">https://blog.csdn.net/woshizzai/article/details/80109617</a></p>
+<ul>
+<li><p>ROM:read only memory 只讀存儲器，斷電數據不丟失.</p>
+</li>
+<li><p>RAM:random access memory 隨機存取存儲器.掉電數據丟失.分為SRAM（static 靜態）和DRAM（dynamic 動態）,SRAM速度快，價格貴，體積相對較大。我們CPU的一二級緩存就是使用SRAM。DRAM每周期要通電刷新，否則數據會丟失，速度比ROM快，我們電腦內存就是使用的DRAM。</p>
+</li>
+<li><p> PROM：programmable ROM 可編程只讀存儲器，只允許寫入一次。又叫OTP-ROM（one time programmable）</p>
+</li>
+<li><p>EPROM：erasable PROM 可擦寫可編程只讀存儲器，使用紫外線擦除數據，用編程器寫入數據。</p>
+</li>
+<li><p>EEPROM：electrically EPROM 電可擦可編程只讀存儲器。電子擦除，可多次擦寫，寫入時間較長。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="個體關係圖-Enity-relationship-diagram"><a href="#個體關係圖-Enity-relationship-diagram" class="headerlink" title="個體關係圖(Enity-relationship diagram)"></a>個體關係圖(Enity-relationship diagram)</h3><p><a target="_blank" rel="noopener" href="http://www.ais.nptu.edu.tw/ais/961%20materials/ERD_961.pdf">http://www.ais.nptu.edu.tw/ais/961%20materials/ERD_961.pdf</a>  (第九頁)</p>
+<ul>
+<li>ERD內通常包含四種元素:<ul>
+<li>個體(entity): 代表欲蒐集資料的對象，已矩形表示。</li>
+<li>關係(relationship):兩兩個體之間建立</li>
+<li>屬性(attributes):</li>
+<li>基數性(cardinality):</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="http://faculty.stust.edu.tw/~jehuang/oracle/ch2/2-1.htm">http://faculty.stust.edu.tw/~jehuang/oracle/ch2/2-1.htm</a> (這個要看一下)<h3 id="TCP提供那些功能"><a href="#TCP提供那些功能" class="headerlink" title="TCP提供那些功能"></a>TCP提供那些功能</h3></li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE">https://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE</a></li>
+<li>流量控制</li>
+<li>定址</li>
+<li>錯誤控制</li>
+<li>穩定性</li>
+</ul>
+<h2 id="107年考古"><a href="#107年考古" class="headerlink" title="107年考古"></a>107年考古</h2><h3 id="Metadata不具備哪項功能"><a href="#Metadata不具備哪項功能" class="headerlink" title="Metadata不具備哪項功能"></a>Metadata不具備哪項功能</h3><ul>
+<li>元資料（Metadata），又稱元資料、中介資料]、中繼資料、後設資料，為描述資料的資料（data about data），主要是描述資料屬性（property）的資訊，用來支援如指示儲存位置、歷史資料、資源尋找、檔案記錄等功能。元資料算是一種電子式目錄，為了達到編製目錄的目的，必須在描述並收藏資料的內容或特色，進而達成協助資料檢索的目的。都柏林核心集（Dublin Core Metadata Initiative，DCMI）是元資料的一種應用，是1995年2月由國際圖書館電腦中心（OCLC）和美國國家超級計算應用中心（National Center for Supercomputing Applications，NCSA）所聯合贊助的研討會，在邀請52位來自圖書館員、電腦專家，共同制定規格，建立一套描述網路上電子檔案之特徵。</li>
+<li>metadata也有人稱為後設資料，也有人稱metadata為元資料或詮釋資料等等。有關metadata名詞起源於1969年，有Jack E. Myers所提出的.metadata即關於資料的資料（data-about-data），可以說是一種標準，是為支援互通性的資料描述，所取得一致的準則。</li>
+<li>Metadata的基本定義出自OCLC與NCSA所主辦的「Metadata Workshop」研討會。它將Metadata定義為「描述資料的資料」（Data about data）。此後各種有關Metadata的定義紛紛的出現。現存很多metadata的定義，主要端視特定社群或使用情境而不同。如有有關資料的資料（data about data），有關資訊物件之結構的資訊（structured information about an information object），描述資源屬性的資料（Data describes attributes of resources）等。<h3 id="MAC-address-長度"><a href="#MAC-address-長度" class="headerlink" title="MAC address 長度"></a>MAC address 長度</h3></li>
+<li>MAC 位址 共有 6 bytes (48 bit) 並以冒號間隔，裝置間的位址皆是獨一無二的存在，一般皆以 十六進制表示 <ul>
+<li>4A:00:04:3F:94:87</li>
+</ul>
+</li>
+</ul>
+<h3 id="傳址呼叫法（call-by-address）-amp-傳值（call-by-value）-amp-傳參考法-call-by-reference"><a href="#傳址呼叫法（call-by-address）-amp-傳值（call-by-value）-amp-傳參考法-call-by-reference" class="headerlink" title="傳址呼叫法（call by address）&amp; 傳值（call by value）&amp; 傳參考法(call by reference)"></a>傳址呼叫法（call by address）&amp; 傳值（call by value）&amp; 傳參考法(call by reference)</h3><p><a target="_blank" rel="noopener" href="http://seed100.com/php-mysql-101-questions/other/c-language-address.htm">http://seed100.com/php-mysql-101-questions/other/c-language-address.htm</a><br><a target="_blank" rel="noopener" href="http://hungming.ct.ntust.edu.tw/2020spring/ct3407/classnotes/ct3407_9.pdf">http://hungming.ct.ntust.edu.tw/2020spring/ct3407/classnotes/ct3407_9.pdf</a></p>
+<ul>
+<li>傳參考法(call by reference)主要使用在函示內的數值轉換或是更改，只要是經歷過複雜(多變數運算)的變數都用參考法<h3 id="程式設計中敘述-statement-為非必要"><a href="#程式設計中敘述-statement-為非必要" class="headerlink" title="程式設計中敘述(statement) 為非必要"></a>程式設計中敘述(statement) 為非必要</h3></li>
+<li>副程式呼叫(subroutine call)為非必要</li>
+<li>其他為必要<ul>
+<li>有條件的執行(conditional execution)</li>
+<li>有條件地重複(conditional rpetition)</li>
+<li>循序的執行(sequential execution)<h3 id="雜湊檔-Hashed-file"><a href="#雜湊檔-Hashed-file" class="headerlink" title="雜湊檔(Hashed file)"></a>雜湊檔(Hashed file)</h3></li>
+</ul>
+</li>
+<li> 利用函式來對應鍵值及位址，不需索引檔—&gt;輸入鍵值，數學函式計算位址，再依位址取出記錄</li>
+<li>雜湊方法(Hash method)<ul>
+<li>直接雜湊(Direct hashing)：鍵值就是位址<ul>
+<li>沒有碰撞(Collision)<ul>
+<li>碰撞：不同的鍵值對應到相同的位址</li>
+</ul>
+</li>
+<li>問題：鍵值可能不適合當作位址值<ul>
+<li>例如：員工號碼通常是一個很大的數字，不適合當位址</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>除法餘數雜湊(Division remainder hashing)<ul>
+<li>→ 將鍵值除以檔案大小，利用餘數加 1 當作位址(address = key mod list_size + 1)<ul>
+<li>例如，假設檔案大小為 307，員工編號 121267 的位址是：address = 121267 mod 307 + 1 = 003</li>
+</ul>
+</li>
+<li>碰撞有可能發生<ul>
+<li>如果檔案大小是質數，碰撞會較少</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>數字抽離雜湊(Digit extraction hashing)<ul>
+<li>所選擇的數字是從鍵值中抽取出來，並且用來當作位址</li>
+<li>碰撞有可能發生</li>
+<li>例如：使用員工編號的第 1、3、4 個數字當作位址(3 位數)：<img src="https://i.imgur.com/D2VSCH7.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>碰撞(Collision)<ul>
+<li>一般來說，鍵值數量通常大於資料檔中記錄的筆數<ul>
+<li>例如，一個 7 位數的學生編號可對應到 10,000,000 個學生，但一個學校的學生不可能這麼多13-9</li>
+</ul>
+</li>
+<li>不同的鍵值可能雜湊到相同的位址：碰撞發生<ul>
+<li>例如，利用除法餘數來雜湊 123013 及 151564 鍵值：(123013 mod 307)+1 = 214, (151564 mod 307)+1 = 214 → 位址相同<ul>
+<li>當 2 個鍵值發生碰撞，必須將其中一個鍵值及其資料放到另一個位址</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>原始位址(Home address)：由雜湊演算法所產生的位址</li>
+<li>主要區域(Prime area)：檔案中包含所有原始位址的部份<br><img src="https://i.imgur.com/pssrLVm.png"><br><img src="https://i.imgur.com/UvLYWik.png"><h3 id="哪個架構不需要cpu卻可以加速"><a href="#哪個架構不需要cpu卻可以加速" class="headerlink" title="哪個架構不需要cpu卻可以加速?"></a>哪個架構不需要cpu卻可以加速?</h3></li>
+<li>Multi-core<ul>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%A4%9A%E6%A0%B8%E5%BF%83%E8%99%95%E7%90%86%E5%99%A8">https://zh.wikipedia.org/wiki/%E5%A4%9A%E6%A0%B8%E5%BF%83%E8%99%95%E7%90%86%E5%99%A8</a></li>
+<li>多核心處理器（英語：Multi-core processor），又稱多核微處理器，是在單個計算元件中加入兩個或以上的獨立實體中央處理單元（簡稱核心，英語：Core）。這些核心可以分別獨立地執行程式指令，利用平行計算的能力加快程式的執行速度。</li>
+<li>通常把兩個或更多獨立處理器封裝在一個單一積體電路（IC）中的方案會稱為多核心處理器，而封裝在不同IC中的獨立處理器形成的計算機系統被稱為多處理器。在某些情況中（比如廣告中），有些人會將在同一個積體電路中多個獨立的單核心微處理器（或多核心微處理器）稱做「多處理模組」、「多核心」等，其實是指「多處理器」而不是「多核心處理器」。除非特別說明，本文將使用「多核心」指代在同一積體電路中整合多個獨立處理器的CPU（即「多核心處理器」）。</li>
+<li>一般情況下，多核心處理器可以在每個核心分別獨立物理封裝的情況下進行多工處理（執行緒級並行處理（Thread-Level Parallelism，TLP），這種形式的TLP通常被認為是晶片級多處理）。</li>
+</ul>
+</li>
+<li>Distributed processing<ul>
+<li><a target="_blank" rel="noopener" href="https://www.webopedia.com/definitions/distributed-processing/">https://www.webopedia.com/definitions/distributed-processing/</a></li>
+<li>Distributed processing is a phrase used to refer to a variety of computer systems that use more than one computer (or processor) to run an application. This includes parallel processing in which a single computer uses more than one CPU to execute programs.</li>
+</ul>
+</li>
+<li>Pipelining<ul>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%8C%87%E4%BB%A4%E7%AE%A1%E7%B7%9A%E5%8C%96">https://zh.wikipedia.org/wiki/%E6%8C%87%E4%BB%A4%E7%AE%A1%E7%B7%9A%E5%8C%96</a></li>
+<li>指令管線化（英語：Instruction pipeline）是為了讓計算機和其它數位電子裝置能夠加速指令的通過速度（單位時間內被執行的指令數量）而設計的技術。管線在處理器的內部被組織成層級，各個層級的管線能半獨立地單獨運作。每一個層級都被管理並且鏈結到一條「鏈」，因而每個層級的輸出被送到其它層級直至任務完成。 處理器的這種組織方式能使總體的處理時間顯著縮短。</li>
+<li>未管線化的架構產生的效率低，因為有些CPU的模組在其他模組執行時是閒置的。管線化雖並不會完全消除CPU的閒置時間，但是能夠讓這些模組並行運作而大幅提升程式執行的效率。差不多有些類似流水線工廠的概念。</li>
+</ul>
+</li>
+</ul>
+<h3 id="影響CPU存取磁碟機資料速度的元素"><a href="#影響CPU存取磁碟機資料速度的元素" class="headerlink" title="影響CPU存取磁碟機資料速度的元素"></a>影響CPU存取磁碟機資料速度的元素</h3><ul>
+<li>跟磁碟旋轉的轉速有關</li>
+<li>跟磁頭前進後退的速度有關</li>
+<li>跟資料的傳輸率有關<h3 id="DRAM-VS-SRAM"><a href="#DRAM-VS-SRAM" class="headerlink" title="DRAM VS SRAM"></a>DRAM VS SRAM</h3><h4 id="SRAM"><a href="#SRAM" class="headerlink" title="SRAM"></a>SRAM</h4></li>
+<li>是什麼造成DRAM與SRAM有如此的差別呢？這必須從它們的結構談起。我們先看一下半導體記憶器的基本構造，不論是SRAM或是DRAM都是由許許多多的儲存元(storage cell)所組成的，每一個儲存元中可以儲存一個位元(0或1)的資訊。每一個儲存元都被指定了一個位址(address)，我們可以藉著加在位址線上的位址A0A1…An來選取某一特定的儲存元，如下圖所示，圖中的SC即代表了儲存元。<br><img src="https://i.imgur.com/REgBsQr.png"></li>
+<li>然後，我們可以再利用電的信號來控制將資訊讀出或寫入該個被選取的儲存元。而DRAM及SRAM的最主要差別就在於它們使用了不同儲存元的結構。就SRAM而言，其儲存元基本上是利用兩個反相器(inverter)交錯相連所行成的正反器(flip-flop)電路所構成，如下圖所示。<br><img src="https://i.imgur.com/hOiTd0B.png"></li>
+<li>從上圖我們可以看出構成儲存元的兩個反相器的輸出分別是1及0，若是我們將反相器的輸入1,0對調，則輸出的1,0亦會對調，也就是說這個正反器可以儲存兩種不同的狀態：(1,0)或(0,1)。若是改以金屬氧化物半導體(metal-oxide-semiconductor)電晶體(也就是所謂的MOS電晶體)來構成這個正反器電路的話，可以得到下面的電路：<img src="https://i.imgur.com/JfF0Hrn.png"></li>
+<li>這便是SRAM的儲存元。要注意的是，在上圖中Q1及Q2構成一個反相器，Q3及Q4則構成另一個反相器，Q5及Q6是用來控制資料的讀出或寫入。所以一個基本的SRAM儲存元至少需要六個MOS電晶體才能組成。SRAM中所儲存二進位元的資訊只要供應的電源沒有斷，儲存的資訊就會一直存在。若是將電源移掉，除非系統有備用的電池電源，否則儲存的資訊就會消失掉。<h4 id="DRAM"><a href="#DRAM" class="headerlink" title="DRAM"></a>DRAM</h4></li>
+<li>這便是SRAM的儲存元。要注意的是，在上圖中Q1及Q2構成一個反相器，Q3及Q4則構成另一個反相器，Q5及Q6是用來控制資料的讀出或寫入。所以一個基本的SRAM儲存元至少需要六個MOS電晶體才能組成。SRAM中所儲存二進位元的資訊只要供應的電源沒有斷，儲存的資訊就會一直存在。若是將電源移掉，除非系統有備用的電池電源，否則儲存的資訊就會消失掉。當然這個時間的間隔必須短於電容電荷漏失至不能辨認1,0所需的時間。所以在DRAM中必須提供一脈波來執行這個refresh的動作，這樣才能保持其所儲存資訊的正確。這也是為什麼DRAM被稱作動態(dynamic)而SRAM被稱為靜態的原因。在早期DRAM的儲存元與SRAM類似必須使用數個電晶體來完成，但是從1973年起，單一電晶體的儲存元已成為DRAM儲存元的標準結構，請見下圖：<br><img src="https://i.imgur.com/HR07Ks6.png"></li>
+<li>其中電晶體的導通與否被用來控制電容的充放電。整個DRAM儲存元中最重要的部分在於儲存電容(storage capacitance)，由於半導體製造技術的進步，採用堆疊式(stacked)的儲存電容或是垂直式的溝槽儲存電容(trench capacitor)已可使DRAM儲存元在晶片上所佔的體積極小，所以可以做到極高的密度，也就是記憶體的容量可以做到非常的大。</li>
+<li>從前面的說明，我們當可以明瞭DRAM與SRAM間差異的原因了。由於DRAM儲存元只需要一個電晶體即可，而SRAM儲存元至少要六個電晶體，所以DRAM可有較高的密度(對同一個世代的積體電路製作技術而言，SRAM的密度約是DRAM的四分之一)，每個位元的成本也較低。但是DRAM是使用電容的充放電荷作為資訊的儲存，所以速度較慢而且需要refresh的電路來防止已儲存資訊的流失，故而DRAM消耗的功率會較SRAM為高。</li>
+</ul>
+<h3 id="Interpreted-解釋-vs-Compiled-編譯-Programming-Languages"><a href="#Interpreted-解釋-vs-Compiled-編譯-Programming-Languages" class="headerlink" title="Interpreted(解釋) vs Compiled(編譯) Programming Languages"></a>Interpreted(解釋) vs Compiled(編譯) Programming Languages</h3><p><a target="_blank" rel="noopener" href="https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/">https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/</a><br><a target="_blank" rel="noopener" href="https://totoroliu.medium.com/%E7%B7%A8%E8%AD%AF%E8%AA%9E%E8%A8%80-vs-%E7%9B%B4%E8%AD%AF%E8%AA%9E%E8%A8%80-5f34e6bae051">https://totoroliu.medium.com/%E7%B7%A8%E8%AD%AF%E8%AA%9E%E8%A8%80-vs-%E7%9B%B4%E8%AD%AF%E8%AA%9E%E8%A8%80-5f34e6bae051</a></p>
+<h4 id="編譯語言-Compiled-language"><a href="#編譯語言-Compiled-language" class="headerlink" title="編譯語言 (Compiled language)"></a>編譯語言 (Compiled language)</h4><ul>
+<li>一種程式語言的類型，編譯語言在程式執行前會先透過編譯器(compiler)將程式碼編譯(Compile)成計算機所看的懂的機器碼(machine language)，最後再執行。編譯式語言多半會是靜態語言(static language)，它們會事先定義的型別、型別檢查 (type check) 與擁有高效能的執行速度等特性。<ul>
+<li>編譯語言— C、C++、Objective-C、Visual Basic等等。<h5 id="Object-code-目標代碼"><a href="#Object-code-目標代碼" class="headerlink" title="Object code(目標代碼)"></a>Object code(目標代碼)</h5><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%9B%AE%E6%A0%87%E4%BB%A3%E7%A0%81">https://zh.wikipedia.org/wiki/%E7%9B%AE%E6%A0%87%E4%BB%A3%E7%A0%81</a></li>
+</ul>
+</li>
+<li>目的碼（英語：object code）指電腦科學中編譯器或組譯器處理原始碼後所生成的代碼，它一般由機器碼或接近於機器語言的代碼組成。[1]目的檔（英語：object file）即存放目的碼的電腦檔案，它常被稱作二進位檔案（binaries）。</li>
+<li>目的檔包含著機器碼（可直接被電腦中央處理器執行）以及代碼在執行時使用的資料，如重定位資訊，如用於連結或除錯的程式符號（變數和函式的名字），此外還包括其他除錯資訊。[2]目的檔是從原始碼檔案產生程式檔案這一過程的中間產物，連結器正是通過把目的檔連結在一起來生成可執行檔或庫檔案。目的檔中唯一的要素是機器碼，例如，用於嵌入式系統的目的檔可能僅僅含有機器碼。<h4 id="直譯語言-Interpreted-language"><a href="#直譯語言-Interpreted-language" class="headerlink" title="直譯語言 (Interpreted language)"></a>直譯語言 (Interpreted language)</h4></li>
+<li>一種程式語言的類型，不同於編譯語言，直譯語言在執行時會一行一行的動態將程式碼直譯(interpret)為機器碼，並執行。直譯語言多半以動態語言(dynamic language)為主，具有靈活的型別處理，動態生成與程式彈性，但速度會比編譯式語言要慢一些。<ul>
+<li>直譯語言 — JavaScript、Python、Ruby等等。</li>
+</ul>
+</li>
+</ul>
+<h4 id="差異"><a href="#差異" class="headerlink" title="差異"></a>差異</h4><ul>
+<li>一般而言，在相同的邏輯下，執行期的執行速度，使用編譯語言的速度會比使用直譯語言來得快，其原因在於編譯語言已經先預先編譯過了，因此在執行時期相較於直譯語言少了一道step-by-step的直譯程式碼的時間。然而這也造成了編譯語言的缺點，編譯語言的程式開發、除錯速度會較編譯語言來的慢，因為編譯語言無法像直譯語言一樣，在開發完一段程式碼就可以馬上執行並且除錯，且直譯語言也給予軟體開發者更有彈性以及快速的開發流程。</li>
+<li>使用編譯語言產生的程式幾乎都是可獨立執行的，因為它們都是由編譯器進行型別/語意等檢查，程式碼幾乎可以直接存取系統服務 (system service) 與 APIs，所以執行效率會特別好；直譯式語言則是必須依賴一個執行環境 (execution context)，語言可用的功能由這個執行環境提供，例如 JavaScript 只能使用瀏覽器提供的功能，它無法獨立執行 (看起來像獨立執行，實際上卻是系統自動在背後建立執行環境，如 HTML Application)。</li>
+<li>為了改善編譯語言以及直譯語言的缺點，因而發展出即時編譯的技術，這種技術混合了編譯語言與直譯語言的優點，如同編譯語言，會先把程式原始碼編譯成中介碼 (Bytecode)。到執行期時，再將中介碼(bytecode，C#為例)直譯，之後執行。使用即時編譯技術的語言會比純編譯語言來的慢一些，但是卻又擁有直譯語言的特性。代表語言有 — Java、C#。<h3 id="SQL-指令"><a href="#SQL-指令" class="headerlink" title="SQL 指令"></a>SQL 指令</h3><img src="https://i.imgur.com/drUCUQv.png"><br><img src="https://i.imgur.com/d73EMqB.png"><h3 id="漢明碼介紹"><a href="#漢明碼介紹" class="headerlink" title="漢明碼介紹"></a>漢明碼介紹</h3><a target="_blank" rel="noopener" href="https://gordonfang-85054.medium.com/%E6%BC%A2%E6%98%8E%E7%A2%BC%E4%BB%8B%E7%B4%B9-hamming-code-intro-1c6669f0cff0">https://gordonfang-85054.medium.com/%E6%BC%A2%E6%98%8E%E7%A2%BC%E4%BB%8B%E7%B4%B9-hamming-code-intro-1c6669f0cff0</a><h4 id="基同位元檢查-Odd-Parity-Check"><a href="#基同位元檢查-Odd-Parity-Check" class="headerlink" title="基同位元檢查(Odd Parity Check):"></a>基同位元檢查(Odd Parity Check):</h4></li>
+<li>在原始資料中加上同位元檢查碼，使1為基數個數，接收端會檢查每一個位元，確認1是否為基數個數，若1的出現總次數為基數則代表驗證無誤，大多一般電腦多採用這套驗證方法。<h4 id="偶同位元檢查-Odd-Parity-Check"><a href="#偶同位元檢查-Odd-Parity-Check" class="headerlink" title="偶同位元檢查(Odd Parity Check):"></a>偶同位元檢查(Odd Parity Check):</h4></li>
+<li>在原始資料中加上同位元檢查碼，使1為偶數個數，接收端會檢查每一個位元，確認1是否為偶數個數，若1的出現總次數為偶數則代表驗證無誤。</li>
+</ul>
+<h2 id="106年考古"><a href="#106年考古" class="headerlink" title="106年考古"></a>106年考古</h2><h3 id="SQL-刪除表格T之外還會刪除依賴表格T的物件"><a href="#SQL-刪除表格T之外還會刪除依賴表格T的物件" class="headerlink" title="SQL 刪除表格T之外還會刪除依賴表格T的物件"></a>SQL 刪除表格T之外還會刪除依賴表格T的物件</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.postgresql.org/docs/8.1/sql-droptable.html">https://www.postgresql.org/docs/8.1/sql-droptable.html</a></li>
+<li>Drop Table name()<ul>
+<li>CASCADE<ul>
+<li>Automatically drop objects that depend on the table (such as views).</li>
+</ul>
+</li>
+<li>RESTRICT<ul>
+<li>Refuse to drop the table if any objects depend on it. This is the default.<h3 id="網路層中，負責網路封包傳送-forwarding-的設備"><a href="#網路層中，負責網路封包傳送-forwarding-的設備" class="headerlink" title="網路層中，負責網路封包傳送(forwarding)的設備"></a>網路層中，負責網路封包傳送(forwarding)的設備</h3></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>網路多工器(Multiplexer)<ul>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E9%80%89%E6%8B%A9%E5%99%A8">https://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E9%80%89%E6%8B%A9%E5%99%A8</a></li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%95%B8%E4%BD%8D%E7%94%A8%E6%88%B6%E7%B7%9A%E8%B7%AF%E6%8E%A5%E5%8F%96%E5%A4%9A%E5%B7%A5%E5%99%A8">https://zh.wikipedia.org/wiki/%E6%95%B8%E4%BD%8D%E7%94%A8%E6%88%B6%E7%B7%9A%E8%B7%AF%E6%8E%A5%E5%8F%96%E5%A4%9A%E5%B7%A5%E5%99%A8</a></li>
+</ul>
+</li>
+<li>網路集線器(Hub)<ul>
+<li> HUB又稱為集線器，使用上非常的簡單方便，只要插電然後接線就可以用了，沒有任何複雜功能，HUB是屬於網路層級中的L1，是最機械化的一廣路設備；可以這麼說：「HUB的每個Port是互通的，假設有個PC從INTERNET上要一個封包，則HUB上的每個PORT上的PC都會接到封包，但是因為其他的PC並沒有接收的處理所以會丟棄，也因此有人說HUB會平均頻寬，這也是沒錯的。」這是HUB與Switch最大的區別，畢竟在使用上這兩種設備都是插了就可以使用，不需要額外設定。</li>
+</ul>
+</li>
+<li>網路交換器(Switch)<ul>
+<li>Switch又稱為交換器，實際使用基本上就跟HUB功能差不多，主要差別就是，Switch的每個PORT，都是個別區隔，原因在於Switch的每個PORT會自動記憶電腦的MAC Address，如此一來這機器當然知道哪個電腦發出什麼要求，所以會有針對性的傳送封包，這是跟HUB最大的分別；所以可以這麼說：「Switch的每個PORT的可以看成各自獨立的，不會有平均的可能，因為他知道封包該傳給的電腦是哪一台。」Switch的使用上也是很簡單方便，一般來說也是插電插線就可以使用了。</li>
+</ul>
+</li>
+<li>網路路由器(Router)<ul>
+<li> Router又稱為路由器或IP分享器或寬頻分享器(俗稱)，IP分享只是ROUTER的其中一項功能(NAT)，一般來說ROUTER更建有強大的防火牆，以及許多的設定功能，因為這也是可以用來管控網路的機器。(在此指NAT ROUTER)</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://bluemuta38.pixnet.net/blog/post/45543357">https://bluemuta38.pixnet.net/blog/post/45543357</a></li>
+<li><a target="_blank" rel="noopener" href="https://givemen.pixnet.net/blog/post/26550383">https://givemen.pixnet.net/blog/post/26550383</a><h3 id="實體層-physical-layer-的傳送技術"><a href="#實體層-physical-layer-的傳送技術" class="headerlink" title="實體層(physical layer)的傳送技術"></a>實體層(physical layer)的傳送技術</h3></li>
+<li>WWW</li>
+<li>LTE</li>
+<li>WCDMA</li>
+<li>GPRS<h3 id="各種公眾無線通訊存取網路技術-public-wireless-access-中，哪個傳輸速率最高"><a href="#各種公眾無線通訊存取網路技術-public-wireless-access-中，哪個傳輸速率最高" class="headerlink" title="各種公眾無線通訊存取網路技術(public wireless access)中，哪個傳輸速率最高?"></a>各種公眾無線通訊存取網路技術(public wireless access)中，哪個傳輸速率最高?</h3></li>
+<li>UMTS(3G)</li>
+<li>LTE(4G)</li>
+<li>GPRS(G)</li>
+<li>HSPDA(H)<h3 id="TCP-VS-IP"><a href="#TCP-VS-IP" class="headerlink" title="TCP VS IP"></a>TCP VS IP</h3><a target="_blank" rel="noopener" href="https://sites.google.com/site/wangjiwanglumingcijieshao/home/tcp-ip">https://sites.google.com/site/wangjiwanglumingcijieshao/home/tcp-ip</a><br><a target="_blank" rel="noopener" href="http://kevin.hwai.edu.tw/~kevin/material/EAssistant/TCP.htm">http://kevin.hwai.edu.tw/~kevin/material/EAssistant/TCP.htm</a><br><a target="_blank" rel="noopener" href="http://linux.vbird.org/linux_server/0110network_basic.php">http://linux.vbird.org/linux_server/0110network_basic.php</a></li>
+</ul>
+<h3 id="IEEE-802"><a href="#IEEE-802" class="headerlink" title="IEEE 802."></a>IEEE 802.</h3><p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/IEEE_802">https://zh.wikipedia.org/wiki/IEEE_802</a></p>
+<ul>
+<li>IEEE 802.3：乙太網路（Ethernet）</li>
+<li>IEEE 802.11：無線區域網路（Wireless LAN &amp; Mesh）</li>
+<li>IEEE 802.15：無線個人區域網路（Wireless PAN）</li>
+<li>IEEE 802.16：寬頻無線接入（Broadband Wireless Access）</li>
+<li>IEEE 802.22：無線區域網（Wireless Regional Area Network）<h3 id="RAID-類型中哪一個是屬於映射型mirroring"><a href="#RAID-類型中哪一個是屬於映射型mirroring" class="headerlink" title="RAID 類型中哪一個是屬於映射型mirroring"></a>RAID 類型中哪一個是屬於映射型mirroring</h3></li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/RAID">https://zh.wikipedia.org/wiki/RAID</a></li>
+</ul>
+<h3 id="阿姆達爾法則"><a href="#阿姆達爾法則" class="headerlink" title="阿姆達爾法則"></a>阿姆達爾法則</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10209114">https://ithelp.ithome.com.tw/articles/10209114</a></li>
+</ul>
+<h3 id="Java-StringBulider-amp-StringBuffer"><a href="#Java-StringBulider-amp-StringBuffer" class="headerlink" title="Java StringBulider &amp; StringBuffer"></a>Java StringBulider &amp; StringBuffer</h3><p><a target="_blank" rel="noopener" href="https://www.runoob.com/java/java-stringbuffer.html">https://www.runoob.com/java/java-stringbuffer.html</a><br><a target="_blank" rel="noopener" href="http://tw.gitbook.net/java/java_string_buffer.html">http://tw.gitbook.net/java/java_string_buffer.html</a><br><a target="_blank" rel="noopener" href="https://coolmandiary.blogspot.com/2018/04/javastringstringbufferstringbuilderequa.html">https://coolmandiary.blogspot.com/2018/04/javastringstringbufferstringbuilderequa.html</a></p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">johnnyXuan6677</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://johnnyxuan6677.github.io/2022/08/16/%E8%80%83%E8%A9%A6%E7%AD%86%E8%A8%98/">https://johnnyxuan6677.github.io/2022/08/16/%E8%80%83%E8%A9%A6%E7%AD%86%E8%A8%98/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank">johnnyXuan6677</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2022/08/16/RedHat-linux/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="RedHat linux">
+                        
+                        <span class="card-title">RedHat linux</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-08-16
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            johnnyXuan6677
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/08/15/First-Hexo-post/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="First Hexo post">
+                        
+                        <span class="card-title">First Hexo post</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-15
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            johnnyXuan6677
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE' || selection.getRangeAt(0).commonAncestorContainer.nodeName === 'CODE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + 'From: 雨軒 JohnnyXuan<br />'
+            + 'Author: johnnyXuan6677<br />'
+            + 'Link: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2022</span>
+            
+            <a href="/about" target="_blank">johnnyXuan6677</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">18.6k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/johnnyXuan6677" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:johnny246810@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+        
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/sakura.js"><\/script>');
+            }
+        </script>
+    
+
+    <!-- 雪花特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/snow.js"><\/script>');
+            }
+        </script>
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
